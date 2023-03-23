@@ -1,0 +1,32 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.feed {
+  list-style: none;
+}
+
+
+.feed li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.feed img {
+  width: 640px;
+  height: 480px;
+}
+
+
+.feed img {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all .5s linear;
+  width: 640px;
+  height: 480px;
+  object-fit: cover;
+}
+
+.feed img.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
