@@ -5,7 +5,7 @@ import usersF from './users.js';
 const users = usersF;
 // Задание 1
 // Получить массив имен всех пользователей (поле name).
-
+console.log('task-1');
 const getUserNames = (users) => {
   const usersName = users.map((user) => user.name);
   return usersName;
@@ -15,7 +15,7 @@ console.log(getUserNames(users));
 // // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
 // Задание 2
 // Получить массив объектов пользователей по цвету глаз (поле eyeColor).
-
+console.log('task-2');
 const getUsersWithEyeColor = (users, color) => {
   const res = users.filter((user) => {
     return user.eyeColor === color;
@@ -27,7 +27,7 @@ const getUsersWithEyeColor = (users, color) => {
 console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
 // Задание 3
 // Получить массив имен пользователей по полу (поле gender).
-
+console.log('task-3');
 const getUsersWithGender = (users, gender) => {
   return users
     .filter((user) => user.gender === gender)
@@ -36,7 +36,7 @@ const getUsersWithGender = (users, gender) => {
 console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 // Задание 4
 // Получить массив только неактивных пользователей (поле isActive).
-console.log('task-6');
+console.log('task-4');
 const getInactiveUsers = (users) => {
   return users.filter((user) => !user.isActive);
 };
@@ -44,7 +44,7 @@ const getInactiveUsers = (users) => {
 console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
 // Задание 5
 // Получить пользоваля (не массив) по email (поле email, он уникальный).
-
+console.log('task-5');
 const getUserWithEmail = (users, email) => {
   return users.find((user) => user.email === email);
 };

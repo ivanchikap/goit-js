@@ -1,0 +1,16 @@
+.sidebar {
+  width: 300px;
+  height: calc(100vh - 4rem);
+  padding: 2rem;
+
+  position: relative;
+  z-index: 4;
+
+  background-color: #ccc;
+  transform: translateX(-101%);
+  transition: transform .3s linear;
+
+  .show-sidebar & {
+    transform: translateX(0);
+  }
+}

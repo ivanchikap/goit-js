@@ -1,0 +1,1 @@
+var spy = new Gumshoe('#my-awesome-nav a');

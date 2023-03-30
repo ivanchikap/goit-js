@@ -1,0 +1,122 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  font-family: $base-fonts;
+  color: #212121;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.2;
+
+  background-color:#efefef;
+
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  &.show-sidebar {
+    overflow: hidden;
+  }
+
+}
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px;
+}
+// gamshoe start
+html {
+	overflow-y: auto;
+	scroll-behavior: smooth;
+}
+
+/*  Sets body width */
+.container {
+	max-width: 90em;
+	width: 88%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/**
+ * Grid
+ */
+.grid {
+	display: grid;
+	grid-gap: 2em;
+	grid-template-columns: 30% 70%;
+}
+
+#my-awesome-nav {
+	position: fixed;
+}
+
+#my-awesome-nav li.active {
+	background-color: black;
+}
+
+#my-awesome-nav li.active a {
+	color: white;
+}
+
+/**
+ * Sections
+ */
+.section {
+	color: #ffffff;
+	height: 95vh;
+	margin: 0;
+	padding: 2em;
+}
+
+#eenie {
+	background-color: #0088cc;
+}
+
+#meenie {
+	background-color: rebeccapurple;
+}
+
+#miney {
+	background-color: #272727;
+}
+
+#mo {
+	background-color: #f42b37;
+}
+// gamshoe end
+
+footer {
+  margin-top: auto;
+}
+
+.hidden-title {
+  visibility: hidden;
+  height: 0;
+}
+
+.page-mask {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  height: 100%;
+  background-color: rgba(0,0,0, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transition: all .2s linear;
+
+
+  .show-sidebar & {
+    background-color: rgba(0,0,0,.8);
+    z-index: 3;
+  }
+}

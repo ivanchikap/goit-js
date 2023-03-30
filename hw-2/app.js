@@ -2,11 +2,11 @@
 // Напиши функцию logItems(array), которая получает массив и использует цикл for, который для каждого элемента массива будет выводить в консоль сообщение в формате [номер элемента] - [значение элемента].
 
 // Нумерация должна начинаться с 1. К примеру для первого элемента массива ['Mango', 'Poly', 'Ajax'] с индексом 0 будет выведено '1 - Mango', а для индекса 2 выведет '3 - Ajax'.
-console.log("task-1");
+console.log('task-1');
 
 const logItems = function (array) {
   if (!Array.isArray(array) || !array.length)
-    return new Error("please provide valid array");
+    return new Error('please provide valid array');
   let res = {};
   for (let i = 0; i < array.length; i++) {
     res[i + 1] = array[i];
@@ -18,16 +18,16 @@ const logItems = function (array) {
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
 //  */
-console.log(logItems(["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"]));
+console.log(logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']));
 
 console.log(logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]));
 console.log(logItems(4));
 // Задание 2
 // Напиши скрипт подсчета стоимости гравировки украшений. Для этого создай функцию calculateEngravingPrice(message, pricePerWord) принимающую строку (в строке будут только слова и пробелы) и цену гравировки одного слова, и возвращающую цену гравировки всех слов в строке.
-console.log("task-2");
+console.log('task-2');
 
 const calculateEngravingPrice = function (message, pricePerWord) {
-  const wordCounts = message.split(" ").length;
+  const wordCounts = message.split(' ').length;
   return wordCounts * pricePerWord;
 };
 
@@ -36,30 +36,30 @@ const calculateEngravingPrice = function (message, pricePerWord) {
 //  */
 console.log(
   calculateEngravingPrice(
-    "Proin sociis natoque et magnis parturient montes mus",
+    'Proin sociis natoque et magnis parturient montes mus',
     10
   )
 ); // 80
 
 console.log(
   calculateEngravingPrice(
-    "Proin sociis natoque et magnis parturient montes mus",
+    'Proin sociis natoque et magnis parturient montes mus',
     20
   )
 ); // 160
 
 console.log(
-  calculateEngravingPrice("Donec orci lectus aliquam est magnis", 40)
+  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40)
 ); // 240
 
 console.log(
-  calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20)
+  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20)
 ); // 120
 // Задание 3
 // Напиши фукцнию findLongestWord(string), которая принимает параметром произвольную строку (в строке будут только слова и пробелы) и возвращает самое длинное слово в этой строке.
-console.log("task-3");
+console.log('task-3');
 const findLongestWord = function (string) {
-  const arrOfWords = string.split(" ");
+  const arrOfWords = string.split(' ');
 
   let longestWorld = arrOfWords[0];
 
@@ -75,11 +75,11 @@ const findLongestWord = function (string) {
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
 //  */
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); // 'jumped'
+console.log(findLongestWord('The quick brown fox jumped over the lazy dog')); // 'jumped'
 
-console.log(findLongestWord("Google do a roll")); // 'Google'
+console.log(findLongestWord('Google do a roll')); // 'Google'
 
-console.log(findLongestWord("May the force be with you")); // 'force'
+console.log(findLongestWord('May the force be with you')); // 'force'
 // Задание 4
 // Напиши функцию formatString(string) которая принимает строку и форматирует ее если необходимо.
 
@@ -92,18 +92,18 @@ const formatString = function (string) {
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
 //  */
-console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 // // вернется оригинальная строка
 
-console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
 // // вернется форматированная строка
 
-console.log(formatString("Curabitur ligula sapien."));
+console.log(formatString('Curabitur ligula sapien.'));
 // // вернется оригинальная строка
 
 console.log(
   formatString(
-    "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
+    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.'
   )
 );
 // // вернется форматированная строка
@@ -113,21 +113,21 @@ console.log(
 const checkForSpam = function (message) {
   const messageLowerCase = message.toLowerCase();
   return (
-    messageLowerCase.split(" ").includes("[spam]") ||
-    messageLowerCase.split(" ").includes("sale")
+    messageLowerCase.split(' ').includes('[spam]') ||
+    messageLowerCase.split(' ').includes('sale')
   );
 };
 
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
 //  */
-console.log(checkForSpam("Latest technology news")); // false
+console.log(checkForSpam('Latest technology news')); // false
 
-console.log(checkForSpam("JavaScript weekly newsletter")); // false
+console.log(checkForSpam('JavaScript weekly newsletter')); // false
 
-console.log(checkForSpam("Get best sale offers now!")); // true
+console.log(checkForSpam('Get best sale offers now!')); // true
 
-console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
+console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
 // Задание 6
 // Напиши скрипт со следующим функционалом:
 
@@ -140,10 +140,10 @@ const numbers = [];
 let total = 0;
 
 do {
-  input = prompt("Enter number");
+  input = prompt('Enter number');
 
   if (input === null) {
-    console.log("Canceled");
+    console.log('Canceled');
     break;
   }
   const value = Number(input);
@@ -182,24 +182,33 @@ console.log(`Total = ${total}`);
 // isLoginUnique только проверяет есть ли такой логин в массиве и возвращает true или false.
 // isLoginValid только проверяет валидный ли логин и возвращает true или false.
 // addLogin добавляет или не добавляет логин в массив. При этом для проверок условия добавления использует результаты вызовов других функций - isLoginUnique и isLoginValid.
-// const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
+console.log('task-7');2
+const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
-// const isLoginValid = function(login) {
-//   // твой код
-// };
+const isLoginValid = (login) => (login.length >= 4 && login.length <= 16);
 
-// const isLoginUnique = function(allLogins, login) {
-//   // твой код
-// };
+const isLoginUnique = (allLogins, login) => !allLogins.includes(login);
 
-// const addLogin = function(allLogins, login) {
-//   // твой код
-// };
+const addLogin = function(allLogins, login) {
+  if (!isLoginValid(login)) {
+    return new Error('Error! Login must be from 4 to 16 characters!');
+  }
+
+  if (!isLoginUnique(allLogins, login)) {
+    return new Error('This login is already used!');
+  }
+
+  allLogins.push(login); 
+
+  return `Login ${login} is added successfull!`;
+};
 
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
 //  */
-// console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
-// console.log(addLogin(logins, 'robotGoogles')); // 'Такой логин уже используется!'
-// console.log(addLogin(logins, 'Zod')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
-// console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
+console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
+console.log(addLogin(logins, 'robotGoogles')); // 'Такой логин уже используется!'
+console.log(addLogin(logins, 'Zod')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
+console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
+
+console.log(logins);
