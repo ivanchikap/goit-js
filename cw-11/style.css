@@ -1,0 +1,25 @@
+.buttons {
+  display: flex;
+  margin: 20px auto;
+  max-width: 600px;
+}
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-left: 20px;
+}
+
+.clockface {
+  margin-top: 20px;
+  font-size: 30px;
+}
