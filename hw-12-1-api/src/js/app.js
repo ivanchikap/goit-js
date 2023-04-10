@@ -5,8 +5,20 @@ const searchableCountry = 'usa';
 const form = document.forms['form'];
 const input = form.elements['input'];
 const output = document.querySelector('#output');
+const btnWrapper = document.querySelector('.btn-wrapper');
+
 
 form.addEventListener('submit', onFormSubmit);
+btnWrapper.addEventListener('click', onBtnsClick);
+
+function onBtnsClick(e) {
+  if (e.target.nodeName !== 'BUTTON') {
+    console.log('click not in the  button');
+    return;
+  }
+  const chosenCountry = e.target.dataset.country;
+  searchApi(chosenCountry, onDataReady);
+}
 
 function onFormSubmit(e) {
   e.preventDefault();
@@ -14,11 +26,11 @@ function onFormSubmit(e) {
   searchApi(inputValue, onDataReady);
 }
 
-function onDataReady(countries) {
-  console.log(countries);
+function onDataReady(countries) { 
+  output.innerHTML = ''; 
   if (countries.length >= 1) {
     const markup = countries.reduce((acc, country) => {
-      acc += `<span>${country.name.official}</span><img width="200" src="${country.flags.svg}"><br>`;
+      acc += `<div class="mt-4">${country.name.official}</div><img width="200" src="${country.flags.svg}"><br>`;
       return acc;
     }, '');
     output.insertAdjacentHTML('afterbegin', markup);

@@ -23,3 +23,41 @@ footer {
   visibility: hidden;
   height: 0;
 }
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 14px;
+  margin-top: 24px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 10px 30px;
+  border: 1px solid #212121;
+  border-radius: 12px;
+  background-clip: padding-box;
+
+  &:hover {
+    background-color: blue;
+    color: white;   
+  }
+
+  &--submit {
+    border-radius: 0 12px 12px 0;
+  }
+}
+
+.input {
+  padding: 10px 30px;
+  border: 1px solid #212121;
+  border-radius: 12px 0 0 12px;
+}
