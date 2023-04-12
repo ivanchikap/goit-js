@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+  <title>Webpack</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>cw-12 part2 Fetch Crud</h1>
+    </div>    
+  </header>  
+
+  <main>
+    <section class="section" id="allButtons">
+      <div class="container">
+        <h2>Get request</h2>
+        <button class="btn" data-type="get" data-action="posts">Get all posts</button>
+        <button class="btn" data-type="get" data-action="posts/1">Get post 1</button>
+        <button class="btn" data-type="get" data-action="comments">Get all comments</button>
+        <button class="btn" data-type="get" data-action="comments/1">Get comment 1</button>          
+        <br>    
+        <button class="btn" data-type="post" data-action="comments">Post comment</button>  
+        <br>
+        <button class="btn" data-type="put" data-action="posts/2">Put - set new post 1</button>  
+        <br>
+        <button class="btn" data-type="patch" data-action="comments/1">Patch comment</button> 
+        <br> 
+        <button class="btn" data-type="del" data-action="comments/2">delete comment 2</button>
+      </div>
+      <section class="results" >
+         <h2>Results</h2>
+         <div id="results">
+
+         </div>
+      </section>
+     
+    </section>
+  </main>
+
+  <footer>     
+  </footer>
+</body>
+</html>

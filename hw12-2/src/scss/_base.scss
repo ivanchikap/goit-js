@@ -1,0 +1,80 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  font-family: $base-fonts;
+  color: #212121;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  background-color:#efefef;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.hidden-title {
+  visibility: hidden;
+  height: 0;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+input {
+  text-align: center;
+   padding: 14px 20px;
+   font-size: 20px;
+   width: 60%;
+   margin: 0 auto;
+   border-radius: 8px;
+   border: 1px solid #aaa;
+}
+.list {
+  margin-top: 30px;
+  list-style: disc;
+  font-size: 20px;
+  line-height: 1.4;  
+  padding-left: 24px;
+}
+
+.country {
+  display: flex;
+  margin-top: 40px;
+
+  &__col {
+    flex: 0 0 50%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    dd {
+      margin-right: 10px;      
+      font-weight: 600;
+    }
+
+    dt {
+      color: blueviolet;
+    }
+  }
+}

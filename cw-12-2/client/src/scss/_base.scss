@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  font-family: $base-fonts;
+  color: #212121;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  background-color:#efefef;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.hidden-title {
+  visibility: hidden;
+  height: 0;
+}
+
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 8px 18px;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+}
