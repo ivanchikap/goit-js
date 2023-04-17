@@ -1,0 +1,15 @@
+На співбесіду
+1. https://proglib.io/p/frontend-interview ---- 
+2. https://thatjsdude.com/interview/js2.html   задачі JS
+3. https://proglib.io/p/algorithm-questions   ---- алгоритми (мало де запитують)
+4. https://proglib.io/p/cracking-the-frontend-interview
+5. https://tproger.ru/articles/problems/ --- 123 задачі з співбесіди
+
+Css grid
+https://www.youtube.com/playlist?list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG
+
+
+Канали
+1. https://www.youtube.com/@VladilenMinin   -- у нього э будь-що
+2. http://ternopiljs.jssolutionsdev.com/
+https://www.youtube.com/@apiko_software    ---- react для про
