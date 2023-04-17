@@ -12,7 +12,7 @@ export default {
         const apiKey = `&key=${apiKeyA}`
         return fetch(baseUrl + search + pageSize + apiKey).then(response => response.json()).then(parcedResopnse => {
             this.incrementPage();
-            return parcedResopnse.hits;
+            return parcedResopnse;
         });
     },
 

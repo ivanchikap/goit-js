@@ -94,3 +94,16 @@ main {
     }
   }
 }
+
+.modal {
+  h3 {
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
